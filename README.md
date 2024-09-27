@@ -70,7 +70,7 @@ Both implementations are optimized for performance, using inline functions and e
 
 - The programs will run indefinitely until manually stopped (e.g., with Ctrl+C).
 - Progress is reported every 100 million names generated.
-- If option 1 (Custom format) is chosen, the generated usernames will begin to loop after approximately 3 billion iterations. This behavior is consistent for all custom-generated names, regardless of the specific string used in the middle.
+- If option 1 (Custom format) is chosen, the generated usernames will begin to loop after approximately 2 billion iterations. This behavior is consistent for all custom-generated names, regardless of the specific string used in the middle.
   - The loop occurs because the program exhausts all possible combinations for the 3-character prefix and suffix (36^3 \* 36^3 = 2,176,782,336 combinations).
   - After reaching the end of these combinations, the program starts over from the beginning.
 - The looping behavior is not present in option 2 (Complete random format), where the entire string is randomized.
